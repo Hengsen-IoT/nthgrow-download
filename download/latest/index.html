@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Download the NthGrow app</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <style>
+      html, body {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .main {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+        position: relative;
+        font-size: 12px;
+        background: #F9FCF6;
+      }
+      .main .logo {
+        width: 155px;
+        height: 50px;
+        background: url('./assets/nthgrow_logo.png') no-repeat;
+        background-size: contain;
+      }
+      .main .slogan {
+        margin: 1.5em 0;
+        text-align: center;
+        color: #515151;
+        font-weight: lighter;
+      }
+      .main .tip {
+        text-align: center;
+        color: #b5b5b5;
+      }
+      .main .tip .emphasis {
+        color: #61A449;
+        font-weight: 500; 
+        font-size: 1.2em;
+        padding: 0 0.2em;
+      }
+      .main .phone-sample {
+        min-width: 41px;
+        min-height: 83px;
+        width: 70%;
+        height: 60%;
+        margin: 0 auto;
+        background: url('./assets/app_view.png') center center no-repeat;
+        background-size: contain;
+      }
+      .main .bottom {
+        padding: 0 1em;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        color: #61A449;
+        font-size: 1.2em;
+      }
+      .main .bottom div {
+        margin: 1em 0;
+        display: none;
+      }
+      .main .bottom button {
+        width: 90%;
+        height: 58px;
+        padding: 1em 2em;
+        border: none;
+        line-height: 1em;
+        border-radius: 30px;
+        background-color: #61A449;
+        font-size: 1.2em;
+        color: white;
+        transition: transform .2s;
+      }
+      button:hover {
+        transform: scale(1.1);
+      }
+      .main .bottom button svg {
+        height: 1em;
+        width: 1em;
+        vertical-align: bottom;
+        margin-right: 0.5em;
+      }
+      .wxtip {
+        background: rgba(0,0,0,0.8); 
+        text-align: center; 
+        position: fixed; 
+        left:0; 
+        top: 0; 
+        width: 100%; 
+        height: 100%; 
+        z-index: 998; 
+        display: none;
+      }
+      .wxtip-icon{
+        width: 100px; 
+        height: 100px; 
+        background: url('./assets/weixin_tip.png') no-repeat; 
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        display: block; 
+        position: absolute; 
+        right: 20px; 
+        top: 20px;
+      }
+      .wxtip-txt{
+        margin-top: 200px; 
+        color: #fff; 
+        font-size: 16px; 
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="logo"></div>
+      <h1 class="slogan">Download the <b>NthGrow</b> app</h1>
+      <p class="tip"><span class="emphasis">NthGrow</span> is available on App Store / Play Store</p>
+      <div class="phone-sample"></div>
+      <div class="bottom">
+        <div id="android">
+
+          <button class="download" device-type="android">
+            <svg t="1647828712873" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1869" width="200" height="200"><path d="M895.98704 384.021599c-35.198812 0-63.99784 28.799028-63.99784 63.99784v255.991361c0 35.198812 28.799028 63.99784 63.99784 63.99784s63.99784-28.799028 63.997841-63.99784v-255.991361c0-35.198812-28.799028-63.99784-63.997841-63.99784zM128.01296 384.021599c-35.198812 0-63.99784 28.799028-63.997841 63.99784v255.991361c0 35.198812 28.799028 63.99784 63.997841 63.99784s63.99784-28.799028 63.99784-63.99784v-255.991361c0-35.198812-28.799028-63.99784-63.99784-63.99784z m95.99676 351.988121a95.99676 95.99676 0 0 0 95.99676 95.99676v127.99568c0 35.198812 28.799028 63.99784 63.99784 63.99784s63.99784-28.799028 63.99784-63.99784v-127.99568h127.99568v127.99568c0 35.198812 28.799028 63.99784 63.99784 63.99784s63.99784-28.799028 63.99784-63.99784v-127.99568a95.99676 95.99676 0 0 0 95.99676-95.99676V384.021599H224.00972v351.988121zM798.198341 320.023759a287.798287 287.798287 0 0 0-129.627625-209.624925l32.030919-64.029839a31.99892 31.99892 0 0 0-57.246068-28.639033l-32.126916 64.28583-8.351718-3.327888C574.301897 69.184225 543.742929 64.032399 512 64.032399s-62.301897 5.151826-90.876933 14.655505l-8.351718 3.327888L380.644433 17.729962a31.99892 31.99892 0 0 0-57.246068 28.639033l32.030919 64.029839A287.862285 287.862285 0 0 0 225.801659 320.023759v31.99892H799.99028v-31.99892h-1.791939zM416.00324 256.025919a31.99892 31.99892 0 0 1-0.063998-63.99784h0.159995a31.99892 31.99892 0 0 1-0.063998 63.99784z m191.99352 0a31.99892 31.99892 0 0 1-0.063998-63.99784h0.159995a31.99892 31.99892 0 0 1-0.063998 63.99784z" p-id="1870" fill="#ffffff"></path></svg>
+              Android
+          </button>
+          <p><a href="./nthgrow_latest.apk" style="color: inherit; text-decoration: inherit;">Download <b>.apk</b> package</a></p>
+
+          <!-- TODO Temporally download from APK package since Google Play is not available -->
+          <!-- <button class="download">
+            <a href="./nthgrow_latest.apk" style="color: inherit; text-decoration: inherit;">Download <b>.apk</b> package</a>
+          </button> -->
+
+        </div>
+        <div id="ios">
+          <button class="download" device-type="ios">
+            <svg t="1647828741297" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2524" width="200" height="200"><path d="M791.487729 544.095473c-1.279999-129.695874 105.759898-191.871814 110.527893-194.975811-60.159942-88.031915-153.855851-100.063903-187.231819-101.471902-79.743923-8.063992-155.583849 46.943955-196.06381 46.943955-40.351961 0-102.8159-45.759956-168.959836-44.543957-86.911916 1.279999-167.071838 50.527951-211.807795 128.383876-90.303913 156.703848-23.135978 388.831623 64.895937 515.9355 43.007958 62.20794 94.303909 132.063872 161.631843 129.567874 64.831937-2.591997 89.375913-41.951959 167.743837-41.951959s100.415903 41.951959 169.055836 40.671961c69.759932-1.311999 113.98389-63.391939 156.703848-125.791878 49.375952-72.15993 69.727932-142.047862 70.911931-145.631859-1.535999-0.703999-136.063868-52.223949-137.407867-207.135799zM662.559854 163.519842c35.743965-43.359958 59.871942-103.5199 53.279948-163.519842-51.48795 2.111998-113.88789 34.303967-150.815854 77.535925-33.151968 38.367963-62.14394 99.615903-54.367947 158.431847 57.471944 4.479996 116.127888-29.215972 151.903853-72.44793z" p-id="2525" fill="#ffffff"></path></svg>
+            IOS
+          </button>
+        </div>
+        <div id="others">
+          <button class="download" device-type="others">
+            Please open it in the browser
+          </button>
+        </div>
+      </div>
+      <div class="wxtip" id="cover">
+        <span class="wxtip-icon"></span>
+        <p class="wxtip-txt">Please click the icon on the upper right corner<br/>Select "Open in the browser"</p>
+      </div>
+    </div>
+    <script>
+      var u = navigator.userAgent,
+          isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1,
+          isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+          isWechat = u.indexOf('MicroMessenger') > -1,
+          urls = {
+            "googlePlay": "https://play.google.com/store/apps/details?id=com.nthgrow",
+            "appStore": "https://apps.apple.com/us/app/nthgrow/id1595529329",
+            "androidLocal": "./nthgrow_latest.apk"
+          }
+      
+      // check if Wechat or Wework
+      if (isWechat) {
+        document.getElementById("cover").style.display = "block"
+      }
+      
+      var targetElement, targetURL
+
+      if (isAndroid) {
+        targetElement = document.getElementById("android")
+        targetURL = urls["googlePlay"]
+      }else if (isIOS) {
+        targetElement = document.getElementById("ios")
+        targetURL = urls["appStore"]
+      }else{
+        targetElement = document.getElementById("others")
+      }
+
+      targetElement.style.display = "block"
+
+      if (targetURL !== undefined) {
+        targetBtn = targetElement.firstElementChild
+        targetBtn.addEventListener('click', function() {
+          window.open(targetURL)
+        })
+      }
+      
+    </script>
+  </body>
+</html>
